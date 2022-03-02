@@ -1,0 +1,113 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap");
+
+/* Form Page 1 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+}
+
+p {
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 5%;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-1 {
+  display: flex;
+  height: 100vh;
+}
+
+.page-1 {
+  width: 50%;
+  height: 100%;
+  padding: 100px 100px 20px 100px;
+}
+
+.left {
+  text-align: center;
+}
+
+.left h1 {
+}
+
+.right {
+  background-color: #454545;
+  padding-right: 50px;
+}
+
+.right h1 {
+  margin-bottom: 100px;
+}
+
+.form-1 {
+  margin: 0 100px;
+}
+
+.form-1 input {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+}
+
+input:last-child {
+  margin-bottom: 0;
+}
+
+.navigation {
+  margin-top: 80px;
+  color: #fe3b1f;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navigation ul li {
+  margin-right: 10px;
+}
+
+.navigation ul li div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe3b1f;
+  opacity: 0.1;
+}
+
+.navigation li:last-child {
+  margin: 0;
+}
+
+.arrows {
+  border: solid 3px #fe3b1f;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.arrows span {
+  bottom: 5px;
+  position: relative;
+}
