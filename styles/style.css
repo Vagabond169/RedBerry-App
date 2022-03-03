@@ -29,19 +29,19 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.section-1 {
+.section {
   display: flex;
   height: 100vh;
 }
 
-.page-1 {
+.section-div {
   width: 50%;
   height: 100%;
-  padding: 100px 100px 20px 100px;
+  padding: 60px 100px 20px 100px;
 }
 
 .left {
-  text-align: center;
+  text-align: right;
 }
 
 .left h1 {
@@ -56,26 +56,44 @@ p {
   margin-bottom: 100px;
 }
 
-.form-1 {
+.form {
   margin: 0 100px;
 }
 
-.form-1 input {
+.form input,
+.form select,
+.skill-bar {
   margin: 0 auto;
   display: block;
   width: 100%;
   height: 50px;
-  margin-bottom: 30px;
   padding: 10px 30px;
+  margin-bottom: 10px;
 }
 
-input:last-child {
+.input-div {
+  margin-bottom: 30px;
+}
+
+.input-div:last-child {
   margin-bottom: 0;
+}
+
+/* This style is used when P is appended to input div */
+.hidden {
+  /* visibility: hidden; */
+  color: red;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
 
 .navigation {
   margin-top: 80px;
   color: #fe3b1f;
+  text-align: center;
 }
 
 .navigation ul {
@@ -100,14 +118,56 @@ input:last-child {
   margin: 0;
 }
 
-.arrows {
+.arrows,
+.skill-bar-btn {
   border: solid 3px #fe3b1f;
   border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
-.arrows span {
+.arrows span,
+.skill-bar-btn span {
   bottom: 5px;
   position: relative;
+}
+
+/* Form Page 2 */
+
+.form select {
+  color: #757575;
+  padding-right: 10px;
+}
+
+.form select option {
+  color: #454545;
+  padding-right: 20px;
+}
+
+.skills-btn {
+  /* position: absolute; */
+  color: #ffffff;
+  background-color: #fe3b1f;
+  padding: 10px 20px;
+  border: none;
+}
+
+.skill-container {
+  margin-top: 35px;
+}
+
+.skill-bar {
+  border: solid 1px #777777;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-bar-btn {
+  color: #fe3b1f;
+}
+
+.skill-bar-btn span {
+  bottom: 6px;
 }
