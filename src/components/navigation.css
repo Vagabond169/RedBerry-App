@@ -1,0 +1,38 @@
+/** @format */
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+li {
+  margin-right: 10px;
+}
+
+li:last-child {
+  margin: 0;
+}
+
+.btns,
+.arrows {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe3b1f;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.arrows {
+  opacity: 1;
+  background-color: transparent;
+  border: solid 3px #fe3b1f;
+  border-radius: 50%;
+  color: #fe3b1f;
+  font-weight: bolder;
+}
