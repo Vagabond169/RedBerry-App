@@ -1,33 +1,49 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./navigation.css";
+import NavigationItem from "./navigationItem";
+import { navigationItemAttributes } from "../data/navigationItemAttributes";
 
-function Navigation() {
+function Navigation(props) {
+    function clickHandler(event) {
+
+    }
+
     return (<div className="navigation">
         <ul>
-            <li>
-                <button className="arrows">{String.fromCharCode(60)}</button>
-            </li>
-            <li>
-                <button className="btns"></button>
-            </li>
-            <li>
-                <button className="btns"></button>
-            </li>
-            <li>
-                <button className="btns"></button>
-            </li>
-            <li>
-                <button className="btns"></button>
-            </li>
-            <li>
-                <button className="btns"></button>
-            </li>
-            <li>
-                <button className="arrows">{String.fromCharCode(62)}</button>
-            </li>
+            {navigationItemAttributes.map(({ classname, textContent }, index) => {
+                return <NavigationItem
+                    key={index}
+                    id={index}
+                    class={classname}
+                    textContent={textContent}
+                    onNext={clickHandler}
+                />
+            })}
         </ul>
     </div>)
 }
 
 export default Navigation;
+
+
+{/* <li>
+                <span onClick={clickHandler} className="arrows">{String.fromCharCode(60)}</span>
+            </li>
+            <li>
+                <span onClick={clickHandler} className="btns"></span>
+            </li>
+            <li>
+                <span onClick={clickHandler} className="btns"></span>
+            </li>
+            <li>
+                <span onClick={clickHandler} className="btns"></span>
+            </li>
+            <li>
+                <span onClick={clickHandler} className="btns"></span>
+            </li>
+            <li>
+                <span onClick={clickHandler} className="btns"></span>
+            </li>
+            <li>
+                <span onClick={clickHandler} className="arrows">{String.fromCharCode(62)}</span>
+            </li> */}
