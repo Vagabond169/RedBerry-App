@@ -4,8 +4,8 @@ import NavigationItem from "./navigationItem";
 import { navigationItemAttributes } from "../data/navigationItemAttributes";
 
 function Navigation(props) {
-    function clickHandler(event) {
-
+    function clickHandler(id) {
+        props.onClick(id);
     }
 
     return (<div className="navigation">

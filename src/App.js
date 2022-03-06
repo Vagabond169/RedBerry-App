@@ -1,10 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ParentContainer from "./components/parentContainer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <ParentContainer />
+    <Router>
+      <ParentContainer />
+    </Router>
   );
 }
 

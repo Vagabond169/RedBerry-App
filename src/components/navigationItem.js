@@ -1,8 +1,15 @@
 import React from "react";
 
+
+
 function NavigationItem(props) {
-    return (<li className={props.class}>
-        <span>{props.textContent}</span>
+    function navItemClickHandler(event) {
+        event.preventDefault();
+        props.onNext(props.id);
+    }
+
+    return (<li>
+        <button className={props.class} onClick={navItemClickHandler}>{props.textContent}</button>
     </li>)
 }
 

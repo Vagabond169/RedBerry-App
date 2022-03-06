@@ -1,7 +1,7 @@
 /** @format */
 
 .form-container {
-  /* background-color: crimson; */
+  background-color: crimson;
   height: 60%;
   width: 60%;
   margin: 0 auto;
@@ -30,6 +30,7 @@
   display: block;
   margin-right: 0;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .skill-container:nth-child(4) {

@@ -2,4 +2,36 @@
 
 .container-left {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.btns,
+.arrows,
+.skill-container-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe3b1f;
+  opacity: 0.2;
+  cursor: pointer;
+  color: #fe3b1f;
+}
+
+.arrows,
+.skill-container-btn {
+  opacity: 1;
+  background-color: transparent;
+  border: solid 3px #fe3b1f;
+  border-radius: 50%;
+  color: #fe3b1f;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  display: inline-block;
 }
