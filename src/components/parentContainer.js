@@ -13,6 +13,8 @@ import { inputAttributes1 } from "../data/inputAttributes";
 import MiddleContainerLeft from "../components/middleContainerLeft";
 import FormContainer from "../form components/formContainer";
 import Form from "../form components/form";
+import ThirdPageOfForm from "../pages/thirdPageOfForm";
+import FourthPageOfForm from "../pages/fourthPageOfForm";
 
 // Rendering with map and filter
 // const forms = [<FirstPageOfForm key={0} />,
@@ -69,6 +71,8 @@ function ParentContainer() {
                         })} */}
                         <FirstPageOfForm />
                         <SecondPageOfForm />
+                        <ThirdPageOfForm />
+                        <FourthPageOfForm />
                     </Form>
                 </FormContainer>
             </MiddleContainerLeft>

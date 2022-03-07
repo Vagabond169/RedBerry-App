@@ -2,9 +2,11 @@
 
 .form-container {
   background-color: crimson;
-  height: 60%;
+  height: 70%;
   width: 60%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-class,
@@ -14,6 +16,7 @@
 
 .input-class,
 #select-id,
+.date-input,
 .skill-container {
   /* margin: 0 auto; */
   display: block;

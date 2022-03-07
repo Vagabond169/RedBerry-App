@@ -3,6 +3,7 @@ import Input from "../form components/input";
 import Select from "../form components/select";
 import Button from "../form components/button";
 import SkillsBar from "../form components/skillsBar";
+import "./secondPageOfForm.css";
 
 function SecondPageOfForm(props) {
     const [arrayOfSkills, updateSkills] = useState([]);
@@ -31,7 +32,7 @@ function SecondPageOfForm(props) {
     }
 
 
-    return (<div className="form-page">
+    return (<div className="form-page second-page">
         <Select />
         <Input
             type="text"

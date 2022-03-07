@@ -1,9 +1,10 @@
 import React from "react";
 import Input from "../form components/input";
 import { inputAttributes1 } from "../data/inputAttributes";
+import "./firstPageOfForm.css"
 
 function FirstPageOfForm(props) {
-    return (<div className="form-page">
+    return (<div className="form-page first-page">
 
         {inputAttributes1.map((item) => {
             return <Input

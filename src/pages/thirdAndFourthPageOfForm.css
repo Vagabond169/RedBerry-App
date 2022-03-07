@@ -1,0 +1,49 @@
+/** @format */
+
+.thirdAndFourth-page {
+  text-align: left;
+  font-size: 12px;
+}
+
+.thirdAndFourth-page label {
+  margin-left: 5px;
+}
+
+.radio-inputs input,
+.thirdAndFourth-page label {
+  cursor: pointer;
+}
+
+.thirdAndFourth-page p {
+  font-size: 15px;
+  color: black;
+}
+
+.radio-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-inputs div {
+  margin-top: 5px;
+}
+
+.date-input,
+.radio-questions,
+.text-box {
+  margin-bottom: 20px;
+}
+
+.text-box:last-child,
+.date-input:last-child {
+  margin-bottom: 0;
+}
+
+.text-box textarea {
+  padding: 15px;
+  width: 100%;
+}
+
+.fourth-page {
+  margin-top: 70px;
+}
