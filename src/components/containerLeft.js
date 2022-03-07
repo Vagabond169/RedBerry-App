@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./containerLeft.css";
 
 function ContainerLeft(props) {

@@ -46,3 +46,11 @@
   align-items: center;
   margin-top: 10px;
 }
+
+.form-page {
+  display: none;
+}
+
+.active {
+  display: block;
+}
