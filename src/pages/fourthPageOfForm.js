@@ -5,15 +5,15 @@ function FourthPageOfForm() {
     return (<div className="form-page fourth-page thirdAndFourth-page">
 
         <div className="radio-questions">
-            <p>Did you contact covid 19? :(</p>
+            <p>Would you attend Devtalks and maybe also organize your own?</p>
             <div className="radio-inputs">
                 <div>
-                    <input type="radio" name="contact" id="yes" value="Yes" />
-                    <label for="yes">Yes</label>
+                    <input type="radio" name="devtalk" id="dev-yes" value="Yes" />
+                    <label for="dev-yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" name="contact" id="no" value="No" />
-                    <label for="no">No</label>
+                    <input type="radio" name="devtalk" id="dev-no" value="No" />
+                    <label for="dev-no">No</label>
                 </div>
             </div>
         </div>

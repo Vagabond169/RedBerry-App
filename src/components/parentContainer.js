@@ -16,10 +16,6 @@ import ThirdPageOfForm from "../pages/thirdPageOfForm";
 import FourthPageOfForm from "../pages/fourthPageOfForm";
 import FifthPageOfForm from "../pages/fifthPageOfForm";
 
-// Rendering with map and filter
-// const forms = [<FirstPageOfForm key={0} />,
-// <SecondPageOfForm key={1} />]
-
 function ParentContainer() {
     const [page, setPage] = useState(0);
 
@@ -46,24 +42,8 @@ function ParentContainer() {
         }
     }
 
-    // Rendering with switch case
-    // let formPage;
 
-    // switch (page) {
-    //     case 1: {
-    //         formPage = <FirstPageOfForm />;
-    //         break;
-    //     }
-    //     case 2: {
-    //         formPage = <SecondPageOfForm />
-    //         break;
-    //     }
-    //     default: {
-    //         break;
-    //     }
-    // }
-
-    return (<div className="parent-container">
+    return (<div className="parent-container acactive-main-container">
         <div className="main-container active-main-container">
             <ContainerLeft>
                 <MiddleContainerLeft >
@@ -77,9 +57,6 @@ function ParentContainer() {
                     })}
                     <FormContainer>
                         <Form>
-                            {/* {forms.filter((_, index) => {
-                            return index + 1 === page
-                        })} */}
                             <FirstPageOfForm />
                             <SecondPageOfForm />
                             <ThirdPageOfForm />

@@ -8,10 +8,10 @@ function FifthPageOfForm(props) {
         props.onGoBack(4);
     }
 
-    return (<div className="main-container fifth-page">
+    return (<div className="main-container first-last-pages">
         <div className="box">
-            <Button classNameProp="submit-btn" textContent="Submit" />
-            <Button classNameProp="go-back-btn" onAction={GobackBtnHandler} textContent="go back" />
+            <Button classNameProp="orange-btn" textContent="Submit" />
+            <Button classNameProp="white-underline-btn" onAction={GobackBtnHandler} textContent="go back" />
         </div>
     </div>)
 }

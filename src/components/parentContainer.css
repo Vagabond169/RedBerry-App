@@ -11,9 +11,14 @@ p {
   display: none;
 }
 
-.active-main-container {
+.active-main-container,
+.starting-page-container {
   display: flex;
   height: 100vh;
+}
+
+.starting-page-container {
+  background: url(../../public/images/stars.png);
 }
 
 .container {
@@ -27,4 +32,39 @@ p {
   margin: auto;
   height: 80%;
   width: 80%;
+}
+
+.first-last-pages {
+  background-color: #000;
+}
+
+/* First and Last Page buttons style */
+
+.orange-btn,
+.white-underline-btn {
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.orange-btn {
+  background-color: #fe3b1f;
+  padding: 20px 80px;
+  border-radius: 100px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.white-underline-btn {
+  background-color: transparent;
+  padding: 5px;
+  text-decoration: underline;
+  font-size: 15px;
+  margin: 30px auto 0;
+}
+
+.box {
+  /* background-color: rgb(219, 130, 175); */
+  margin: auto;
 }
