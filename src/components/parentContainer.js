@@ -5,16 +5,16 @@ import "./parentContainer.css";
 import Navigation from "./navigation";
 import FirstPageOfForm from "../pages/firstPageOfForm";
 import SecondPageOfForm from "../pages/secondPageOfForm";
-import AboutSide from "../pages/aboutSide";
+import AboutSide from "./aboutSide";
 import { textData } from "../data/textData"
 import Header from "../components/header";
 import Paragraph from "../components/paragraph";
-import { inputAttributes1 } from "../data/inputAttributes";
 import MiddleContainerLeft from "../components/middleContainerLeft";
 import FormContainer from "../form components/formContainer";
 import Form from "../form components/form";
 import ThirdPageOfForm from "../pages/thirdPageOfForm";
 import FourthPageOfForm from "../pages/fourthPageOfForm";
+import FifthPageOfForm from "../pages/fifthPageOfForm";
 
 // Rendering with map and filter
 // const forms = [<FirstPageOfForm key={0} />,
@@ -24,16 +24,26 @@ function ParentContainer() {
     const [page, setPage] = useState(0);
 
     function handlerFunction(id) {
+        const mainPage = document.querySelectorAll(".main-container")
         const formPages = document.querySelectorAll(".form-page");
-        setPage(prev => {
-            if (prev > 0) { // If same page is clicked here toggle removes class and below adds again
-                formPages[prev - 1].classList.toggle("active");
+        if (id < 5) {
+            if (mainPage[1].classList.contains("active-main-container")) {
+                mainPage[0].classList.toggle("active-main-container");
+                mainPage[1].classList.toggle("active-main-container");
             }
-            return id
-        });
-        // console.log(formPages.forEach(page => console.log(page.classList.toggle("active"))));
-        const activePage = formPages[id - 1];
-        activePage.classList.toggle("active");
+            setPage(prev => {
+                if (prev > 0) { // If same page is clicked here toggle removes class and below adds again
+                    formPages[prev - 1].classList.toggle("active");
+                }
+                return id
+            });
+            // console.log(formPages.forEach(page => console.log(page.classList.toggle("active"))));
+            const activePage = formPages[id - 1];
+            activePage.classList.toggle("active");
+        } else {
+            mainPage[0].classList.toggle("active-main-container");
+            mainPage[1].classList.toggle("active-main-container");
+        }
     }
 
     // Rendering with switch case
@@ -54,40 +64,43 @@ function ParentContainer() {
     // }
 
     return (<div className="parent-container">
-        <ContainerLeft>
-            <MiddleContainerLeft >
+        <div className="main-container active-main-container">
+            <ContainerLeft>
+                <MiddleContainerLeft >
+                    {textData.map((textObj, index) => {
+                        return <Header
+                            key={index}
+                            textContent={textObj.hTextL}
+                        />
+                    }).filter((_, index) => {
+                        return index + 1 === page
+                    })}
+                    <FormContainer>
+                        <Form>
+                            {/* {forms.filter((_, index) => {
+                            return index + 1 === page
+                        })} */}
+                            <FirstPageOfForm />
+                            <SecondPageOfForm />
+                            <ThirdPageOfForm />
+                            <FourthPageOfForm />
+                        </Form>
+                    </FormContainer>
+                </MiddleContainerLeft>
+                <Navigation onClick={handlerFunction} />
+            </ContainerLeft>
+            <ContainerRight>
                 {textData.map((textObj, index) => {
-                    return <Header
-                        key={index}
-                        textContent={textObj.hTextL}
-                    />
+                    return <AboutSide key={index}>
+                        <Header textContent={textObj.hTextR} />
+                        <Paragraph textContent={textObj.pText} />
+                    </AboutSide>
                 }).filter((_, index) => {
                     return index + 1 === page
                 })}
-                <FormContainer>
-                    <Form>
-                        {/* {forms.filter((_, index) => {
-                            return index + 1 === page
-                        })} */}
-                        <FirstPageOfForm />
-                        <SecondPageOfForm />
-                        <ThirdPageOfForm />
-                        <FourthPageOfForm />
-                    </Form>
-                </FormContainer>
-            </MiddleContainerLeft>
-            <Navigation onClick={handlerFunction} />
-        </ContainerLeft>
-        <ContainerRight>
-            {textData.map((textObj, index) => {
-                return <AboutSide key={index}>
-                    <Header textContent={textObj.hTextR} />
-                    <Paragraph textContent={textObj.pText} />
-                </AboutSide>
-            }).filter((_, index) => {
-                return index + 1 === page
-            })}
-        </ContainerRight>
+            </ContainerRight>
+        </div>
+        <FifthPageOfForm onGoBack={handlerFunction} />
     </div>)
 }
 
