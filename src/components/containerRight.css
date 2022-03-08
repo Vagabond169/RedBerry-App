@@ -1,9 +1,9 @@
 /** @format */
 
-p {
+.container-right p {
   color: #ffffff;
   font-size: 25px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   line-height: 40px;
   font-family: "Montserrat", sans-serif;
 }

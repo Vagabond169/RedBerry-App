@@ -1,3 +1,5 @@
+"use strict"
+
 import React from "react";
 import "./startingPage.css";
 import Header from "../../components/header";
@@ -15,7 +17,7 @@ function StartingPage(props) {
         <div className="box starting-page-box">
             <Button classNameProp="orange-btn" onAction={startBtnHandler} textContent="Start Questionnaire" />
             <Button classNameProp="white-underline-btn" textContent="Submitted Applications" />
-            <img src="public/images/rocketman.png" alt="Rocketman" />
+            <img src={require("./rocketman.png")} alt="Rocketman" />
         </div>
 
     </div>)
