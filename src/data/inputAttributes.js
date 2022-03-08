@@ -1,4 +1,4 @@
-const inputAttributes1 = [
+const inputAttributes = [
     {
         id: 1,
         type: "text",
@@ -29,4 +29,4 @@ const inputAttributes1 = [
     }
 ];
 
-export { inputAttributes1 };
+export { inputAttributes };

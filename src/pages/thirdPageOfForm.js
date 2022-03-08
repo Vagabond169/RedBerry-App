@@ -9,15 +9,15 @@ function ThirdPageOfForm() {
             <div className="radio-inputs">
                 <div>
                     <input type="radio" name="work" id="office" value="From Sairme Office" />
-                    <label for="office">From Sairme Office</label>
+                    <label htmlFor="office">From Sairme Office</label>
                 </div>
                 <div>
                     <input type="radio" name="work" id="home" value="From Home" />
-                    <label for="home">From Home</label>
+                    <label htmlFor="home">From Home</label>
                 </div>
                 <div>
                     <input type="radio" name="work" id="hyprid" value="Hybrid" />
-                    <label for="hyprid">Hybrid</label>
+                    <label htmlFor="hyprid">Hybrid</label>
                 </div>
             </div>
         </div>
@@ -27,11 +27,11 @@ function ThirdPageOfForm() {
             <div className="radio-inputs">
                 <div>
                     <input type="radio" name="contact" id="yes" value="Yes" />
-                    <label for="yes">Yes</label>
+                    <label htmlFor="yes">Yes</label>
                 </div>
                 <div>
                     <input type="radio" name="contact" id="no" value="No" />
-                    <label for="no">No</label>
+                    <label htmlFor="no">No</label>
                 </div>
             </div>
         </div>
@@ -44,11 +44,11 @@ function ThirdPageOfForm() {
             <div className="radio-inputs">
                 <div>
                     <input type="radio" name="vaccinate" id="vac-yes" value="Yes" />
-                    <label for="vac-yes">Yes</label>
+                    <label htmlFor="vac-yes">Yes</label>
                 </div>
                 <div>
                     <input type="radio" name="vaccinate" id="vac-no" value="No" />
-                    <label for="vac-no">No</label>
+                    <label htmlFor="vac-no">No</label>
                 </div>
             </div>
         </div>

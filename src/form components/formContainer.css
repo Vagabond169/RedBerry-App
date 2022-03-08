@@ -9,9 +9,19 @@
   flex-direction: column;
 }
 
-.input-class,
 #select-id {
   margin-bottom: 35px;
+}
+
+.input-div {
+  margin-bottom: 10px;
+}
+
+.input-div p {
+  font-size: 13px;
+  text-align: left;
+  margin-left: 20px;
+  color: black;
 }
 
 .input-class,

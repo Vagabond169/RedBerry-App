@@ -34,7 +34,7 @@ function Select() {
     })();
 
     return (<select value={option} onChange={handleChange} name="Skills" id="select-id">
-        <option disabled selected hidden>SKILLS</option>
+        <option disabled selected hidden>Skills</option>
         {arrayOfSkills.map(displaySkills)}
     </select>)
 }

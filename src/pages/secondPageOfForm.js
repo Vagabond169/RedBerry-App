@@ -33,13 +33,15 @@ function SecondPageOfForm(props) {
 
     return (<div className="form-page second-page">
         <Select />
-        <Input
-            type="text"
-            placeholder="Experience Duration in Years"
-            require=""
-            id="exp-id"
-            name="experience"
-        />
+        <div className="input-div">
+            <Input
+                type="text"
+                placeholder="Experience Duration in Years"
+                require=""
+                id="exp-id"
+                name="experience"
+            />
+        </div>
         <Button
             onAction={addSkillHandler}
             classNameProp="add-skill-btn"

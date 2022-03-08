@@ -9,11 +9,11 @@ function FourthPageOfForm() {
             <div className="radio-inputs">
                 <div>
                     <input type="radio" name="devtalk" id="dev-yes" value="Yes" />
-                    <label for="dev-yes">Yes</label>
+                    <label htmlFor="dev-yes">Yes</label>
                 </div>
                 <div>
                     <input type="radio" name="devtalk" id="dev-no" value="No" />
-                    <label for="dev-no">No</label>
+                    <label htmlFor="dev-no">No</label>
                 </div>
             </div>
         </div>

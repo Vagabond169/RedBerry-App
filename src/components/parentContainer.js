@@ -17,12 +17,15 @@ import FourthPageOfForm from "../pages/fourthPageOfForm";
 import FifthPageOfForm from "../pages/fifthPageOfForm";
 
 function ParentContainer() {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(1);
 
     function handlerFunction(id) {
         const mainPage = document.querySelectorAll(".main-container")
         const formPages = document.querySelectorAll(".form-page");
+
+        //Checking if user is on form page or submit page
         if (id < 5) {
+            //If user returns from submit page to form page submit page will not be displayed and from will
             if (mainPage[1].classList.contains("active-main-container")) {
                 mainPage[0].classList.toggle("active-main-container");
                 mainPage[1].classList.toggle("active-main-container");
@@ -31,17 +34,16 @@ function ParentContainer() {
                 if (prev > 0) { // If same page is clicked here toggle removes class and below adds again
                     formPages[prev - 1].classList.toggle("active");
                 }
-                return id
+                return id;
             });
-            // console.log(formPages.forEach(page => console.log(page.classList.toggle("active"))));
             const activePage = formPages[id - 1];
             activePage.classList.toggle("active");
+            //If user goes to submit page form page won't be displayed and submit will
         } else {
             mainPage[0].classList.toggle("active-main-container");
             mainPage[1].classList.toggle("active-main-container");
         }
     }
-
 
     return (<div className="parent-container acactive-main-container">
         <div className="main-container active-main-container">

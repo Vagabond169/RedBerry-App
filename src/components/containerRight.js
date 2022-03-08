@@ -1,5 +1,6 @@
+"use strict"
+
 import React from "react";
-import ReactDOM from "react-dom";
 import "./containerRight.css";
 
 function ContainerRight(props) {
