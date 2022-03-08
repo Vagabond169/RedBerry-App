@@ -18,11 +18,17 @@
   font-size: 15px;
   color: black;
   line-height: 20px;
+  margin-bottom: 5px;
 }
 
 .radio-inputs {
   display: flex;
   flex-direction: column;
+}
+
+.date-input,
+.text-box textarea {
+  margin-top: 10px;
 }
 
 .radio-inputs div {
@@ -46,5 +52,5 @@
 }
 
 .fourth-page {
-  margin-top: 70px;
+  margin-top: 50px;
 }

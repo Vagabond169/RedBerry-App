@@ -1,7 +1,7 @@
 /** @format */
 
 .form-container {
-  background-color: crimson;
+  /* background-color: crimson; */
   height: 70%;
   width: 60%;
   margin: 0 auto;
@@ -21,7 +21,8 @@
   font-size: 13px;
   text-align: left;
   margin-left: 20px;
-  color: black;
+  color: red;
+  line-height: 30px;
 }
 
 .input-class,
