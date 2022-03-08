@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/RedBerry-App/static/css/main.e372a826.css",
+    "main.js": "/RedBerry-App/static/js/main.a7a73c2e.js",
+    "static/media/stars.png": "/RedBerry-App/static/media/stars.79ba770972d1ba63963b.png",
+    "index.html": "/RedBerry-App/index.html",
+    "main.e372a826.css.map": "/RedBerry-App/static/css/main.e372a826.css.map",
+    "main.a7a73c2e.js.map": "/RedBerry-App/static/js/main.a7a73c2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e372a826.css",
+    "static/js/main.a7a73c2e.js"
+  ]
+}
