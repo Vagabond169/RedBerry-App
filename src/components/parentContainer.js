@@ -23,6 +23,10 @@ function ParentContainer() {
         const mainPage = document.querySelectorAll(".main-container")
         const formPages = document.querySelectorAll(".form-page");
 
+        if (id === 4) {
+            document.querySelector(`#btn-${id}`).style.opacity = 1;
+        }
+
         //Checking if user is on form page or submit page
         if (id < 5) {
             //If user returns from submit page to form page submit page will not be displayed and from will

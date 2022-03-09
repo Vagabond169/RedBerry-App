@@ -17,6 +17,11 @@
   opacity: 0.2;
   cursor: pointer;
   color: #fe3b1f;
+  border: none;
+}
+
+#btn-1 {
+  opacity: 1;
 }
 
 .arrows,
