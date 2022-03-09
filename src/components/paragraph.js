@@ -1,7 +1,9 @@
 import React from "react";
 
 function Paragraph(props) {
-    return <p className="paragraph">{props.textContent}</p>
+    return (<div className="paragraph-div">
+        <p className="paragraph">{props.textContent}</p>
+    </div>)
 }
 
 export default Paragraph;

@@ -1,4 +1,3 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React from "react";
 
 let page = 1;
@@ -18,7 +17,7 @@ function NavigationItem(props) {
             document.querySelector(`#btn-${page}`).style.opacity = 1;
             props.onNext(page);
         } else if (event.target.id === "btn-0") {
-            if (page === 1) {
+            if (page === 0) {
                 props.onNext(1);
             } else {
                 if (page === 5) {

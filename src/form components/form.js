@@ -1,9 +1,11 @@
 import React from "react";
 
 function Form(props) {
-    return (<form id="my-form" action="" method="POST">
-        {props.children}
-    </form>)
+    return (<div className="form-div">
+        <form id="my-form" action="" method="POST">
+            {props.children}
+        </form>
+    </div>)
 }
 
 export default Form;

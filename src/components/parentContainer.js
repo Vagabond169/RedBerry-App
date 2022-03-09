@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import ContainerLeft from "./containerLeft";
 import ContainerRight from "./containerRight";
 import "./parentContainer.css";
@@ -15,6 +16,8 @@ import Form from "../form components/form";
 import ThirdPageOfForm from "../pages/thirdPageOfForm";
 import FourthPageOfForm from "../pages/fourthPageOfForm";
 import FifthPageOfForm from "../pages/fifthPageOfForm";
+import ThankYouPage from "../pages/thankYouPage";
+import StartingPage from "../pages/Starting Page/startingPage";
 
 function ParentContainer() {
     const [page, setPage] = useState(1);
@@ -22,6 +25,10 @@ function ParentContainer() {
     function handlerFunction(id) {
         const mainPage = document.querySelectorAll(".main-container")
         const formPages = document.querySelectorAll(".form-page");
+
+        if (id === 0) {
+            ReactDOM.render(<StartingPage />, document.getElementById("root"));
+        }
 
         if (id === 4) {
             document.querySelector(`#btn-${id}`).style.opacity = 1;
@@ -84,6 +91,7 @@ function ParentContainer() {
             </ContainerRight>
         </div>
         <FifthPageOfForm onGoBack={handlerFunction} />
+        {/* <ThankYouPage /> */}
     </div>)
 }
 

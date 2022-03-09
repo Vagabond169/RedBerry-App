@@ -4,7 +4,7 @@ import "./thirdAndFourthPageOfForm.css"
 function ThirdPageOfForm() {
     return (<div className="form-page thirdAndFourth-page">
 
-        <div className="radio-questions">
+        <div className="radio-questions first-radio-question-div">
             <p>how would you prefer to work?</p>
             <div className="radio-inputs">
                 <div>

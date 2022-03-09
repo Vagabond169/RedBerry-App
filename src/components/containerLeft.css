@@ -10,14 +10,15 @@
 .btns,
 .arrows,
 .skill-container-btn {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #fe3b1f;
   opacity: 0.2;
   cursor: pointer;
   color: #fe3b1f;
   border: none;
+  font-size: 20px;
 }
 
 #btn-1 {

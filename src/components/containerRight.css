@@ -2,7 +2,7 @@
 
 .container-right p {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing: 1px;
   line-height: 40px;
   font-family: "Montserrat", sans-serif;
@@ -11,4 +11,10 @@
 .container-right {
   background-color: #454545;
   text-align: left;
+}
+
+.paragraph-div {
+  /* background-color: aqua; */
+  margin: auto;
+  height: 60%;
 }

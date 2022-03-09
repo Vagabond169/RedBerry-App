@@ -1,0 +1,11 @@
+/** @format */
+
+.thanksgiving-page {
+  height: 100vh;
+  display: flex;
+}
+
+.thanksgiving-page h1 {
+  margin: auto;
+  font-size: 500%;
+}

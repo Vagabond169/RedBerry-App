@@ -7,6 +7,7 @@
 
 .thirdAndFourth-page label {
   margin-left: 5px;
+  font-size: 15px;
 }
 
 .radio-inputs input,
@@ -15,10 +16,15 @@
 }
 
 .thirdAndFourth-page p {
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.first-radio-question-div p {
+  margin-top: 0;
 }
 
 .radio-inputs {
